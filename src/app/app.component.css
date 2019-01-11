@@ -1,0 +1,7 @@
+  .example-spacer {
+    flex: 1 1 auto;
+    padding: 20px;
+  }
+  .icon-nav-bar{
+      cursor: pointer;
+  }
