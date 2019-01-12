@@ -11,6 +11,8 @@ import {
     MatOptionModule
 } from '@angular/material'
 import { NgModule } from '@angular/core';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
     imports: [
@@ -24,6 +26,8 @@ import { NgModule } from '@angular/core';
         MatSelectModule,
         MatInputModule,
         MatOptionModule,
+        MatTabsModule,
+        MatTableModule
         
     ],
     exports:[
@@ -36,7 +40,9 @@ import { NgModule } from '@angular/core';
         MatFormFieldModule,
         MatOptionModule,
         MatSelectModule,
-        MatInputModule
+        MatInputModule,
+        MatTabsModule,
+        MatTableModule
     ]
   })
   export class MaterialModule { }

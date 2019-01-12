@@ -8,15 +8,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { SummarizeComponent } from './summarize/summarize.component';
 
 const appRoutes: Routes=[
+  {path:'', component: SummarizeComponent},
   {path:'addCoustomerShop',component:AddCustomerStoresComponent}
 ]
 @NgModule({
   declarations: [
     AppComponent,
     AddCustomerStoresComponent,
-    MainNavComponent
+    MainNavComponent,
+    SummarizeComponent
   ],
   imports: [
     BrowserModule,

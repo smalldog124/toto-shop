@@ -5,7 +5,14 @@
       [opened]="!(isHandset$ | async)">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="/addCoustomerShop">เพิ่มร้านค้า</a>
+      <a mat-list-item href="/">
+        <mat-icon>home</mat-icon>
+        หน้าหลัก
+      </a>
+      <a mat-list-item href="/addCoustomerShop">
+        <mat-icon>add</mat-icon>
+        เพิ่มร้านค้า
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
