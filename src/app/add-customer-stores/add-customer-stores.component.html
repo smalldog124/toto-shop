@@ -1,3 +1,26 @@
-<p>
-  add-customer-stores works!
-</p>
+<div class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="ชื่อร้านค้า">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="ชื่อเจ้าของร้าน">
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput placeholder="ที่อยู่"></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="สาย">
+      <mat-option value="option">วันจันทร์</mat-option>
+      <mat-option value="option">วันอังคาร</mat-option>
+      <mat-option value="option">วันพุธ</mat-option>
+      <mat-option value="option">วันพฤหัสบดี</mat-option>
+      <mat-option value="option">วันศุกร์</mat-option>
+      <mat-option value="option">วันเสาร์</mat-option>
+      <mat-option value="option">วันอาทิตย์</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button mat-raised-button color="primary">เพิ่มร้านค้า</button>
+</div>
