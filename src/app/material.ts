@@ -28,7 +28,6 @@ import { MatTableModule } from '@angular/material/table';
         MatOptionModule,
         MatTabsModule,
         MatTableModule
-        
     ],
     exports:[
         MatButtonModule,

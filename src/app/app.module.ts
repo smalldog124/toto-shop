@@ -9,17 +9,20 @@ import { MaterialModule } from './material';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { SummarizeComponent } from './summarize/summarize.component';
+import { CustomerStoreComponent } from './customer-store/customer-store.component';
 
 const appRoutes: Routes=[
   {path:'', component: SummarizeComponent},
-  {path:'addCoustomerShop',component:AddCustomerStoresComponent}
+  {path:'addCoustomerShop',component:AddCustomerStoresComponent},
+  {path:'CoustomerShop',component:CustomerStoreComponent}
 ]
 @NgModule({
   declarations: [
     AppComponent,
     AddCustomerStoresComponent,
     MainNavComponent,
-    SummarizeComponent
+    SummarizeComponent,
+    CustomerStoreComponent,
   ],
   imports: [
     BrowserModule,
