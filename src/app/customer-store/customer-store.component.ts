@@ -1,5 +1,8 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { MatTableDataSource} from '@angular/material';
+import { Observable } from "rxjs";
+import { HttpClient } from '@angular/common/http';
+import { CustomerService } from '../customer.service'
 
 export interface PeriodicElement {
   name: string;
@@ -20,12 +23,23 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 9, name: 'Fluorine', address: 18.9984, line: 'F'},
   {position: 10, name: 'Neon', address: 20.1797, line: 'Ne'},
 ];
+const path ="http://localhost:3000/api/v1/customerStore"
 @Component({
   selector: 'app-customer-store',
   templateUrl: './customer-store.component.html',
   styleUrls: ['./customer-store.component.css']
 })
 export class CustomerStoreComponent {
+
+  cutomerObservable : Observable<any>;
+
+  constructor(private httpClient:HttpClient, private customser:CustomerService){}
+
+  ngOnInit() {
+    this.customser.getCustomerStore().subscribe((result)=>{
+      console.log(result)
+    });
+  }
 
   displayedColumns: string[] = ['position', 'name', 'address', 'line'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);

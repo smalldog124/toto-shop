@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AddCustomerStoresComponent } from './add-customer-stores/add-customer-stores.component';
@@ -29,6 +30,7 @@ const appRoutes: Routes=[
     BrowserAnimationsModule,
     LayoutModule,
     MaterialModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
