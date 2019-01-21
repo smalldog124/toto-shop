@@ -23,7 +23,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 9, name: 'Fluorine', address: 18.9984, line: 'F'},
   {position: 10, name: 'Neon', address: 20.1797, line: 'Ne'},
 ];
-const path ="http://localhost:3000/api/v1/customerStore"
 @Component({
   selector: 'app-customer-store',
   templateUrl: './customer-store.component.html',
